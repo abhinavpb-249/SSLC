@@ -626,6 +626,7 @@ finalresult = finalresult.toFixed(2);
   
 
 if(total==10){
+
              document.getElementById('result').innerHTML = finalresult+"%";
   
              
@@ -637,18 +638,15 @@ if(total==10){
                                    }
                else {document.getElementById("details").innerHTML = "You have to apppear for the SAY exam to be eligible for higher   studies"; }
                
+               clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
+               
               }
   
 else   {document.getElementById('result').innerHTML = "error";
        document.getElementById("details").innerHTML = "Total number of subjects doesn't add upto 10" ;
        } 
   
-  
-  
-clicked= true;
 
- if(clicked==true){console.log("clicked is true")}
- else{console.log("Clicked is false")}
   
 }
 

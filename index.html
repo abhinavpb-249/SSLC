@@ -24,8 +24,7 @@ To find the SSLC percentage, Type the number of A+,A,B+... you got and click "Sh
 
 
 
-<div style="background: #032152; color:white; border-radius: 10px; border: 3px solid blue; font-size: 15px; 
-margin: auto; padding: 10px; width:50%;">
+<div class="input_box">
 
   <div class="input_form">
   
@@ -270,6 +269,11 @@ So, to get them you have to "Demand Draft" for it from pareekshabhavan
   .input_form{
   width:30%;
   margin:auto;
+  }
+  
+  .input_box{
+  background: #032152; color:white; border-radius: 10px; border: 3px solid blue; font-size: 15px; 
+margin: auto; padding: 10px; width:50%;
   }
   
   #result{
@@ -555,6 +559,8 @@ tr:nth-child(even) {
  
  if (window.matchMedia("(max-width: 767px)").matches){
  document.getElementById("result").style.width="100%";
+ document.getElementsByClassName("input_box")[0].style.width="100%";
+ 
  }
      
 

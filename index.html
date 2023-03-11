@@ -90,11 +90,9 @@ To find the SSLC percentage, Type the number of A+,A,B+... you got and click "Sh
 <div style="text-align:center">
   <p id="details"></p>  
   
-    <a href="https://api.whatsapp.com/send?text=pbphysics.blogspot.com/2021/08/sslc-percentage-calculator.html" target="_blank">
-  <div class="button-85">
-           Share
-          </div>
-  </a>
+    <!--<a href="https://api.whatsapp.com/send?text=pbphysics.blogspot.com/2021/08/sslc-percentage-calculator.html" target="_blank"> -->
+    
+    <button onclick="share()" class="button-85"> Share </button>
   
 </div>  
   
@@ -549,7 +547,12 @@ tr:nth-child(even) {
 
 <script charset="utf-8" language="javascript" type="text/javascript">
 
-function output(){
+ clicked = false
+
+ if(clicked==true){console.log("clicked is true")}
+ else{console.log("Clicked is false")}
+ 
+ 
     var Ap = document.getElementById('Ap').value;
     var Ag = document.getElementById('Ag').value;
     var Bp = document.getElementById('Bp').value;
@@ -581,7 +584,7 @@ function output(){
      {Eg=0}
   
   
-    Ap = parseFloat(Ap);
+  Ap = parseFloat(Ap);
   Ag = parseFloat(Ag);
   Bp = parseFloat(Bp);
   Bg = parseFloat(Bg);
@@ -590,21 +593,23 @@ function output(){
   Dp = parseFloat(Dp);
   Dg = parseFloat(Dg);
   Eg = parseFloat(Eg);
-  
-  
-  
-  var total = Ap+Ag+Bp+Bg+Cp+Cg+Dp+Dg+Eg;
 
+function output(){
+   
   
-  console.log("total:  "+total);
+  
+  
+   total = Ap+Ag+Bp+Bg+Cp+Cg+Dp+Dg+Eg;
+   console.log("total:  "+total);
   
   
   
-let finalresult = 
+ finalresult = 
       100/90*(9*parseInt(Ap) + 8*parseInt(Ag) + 7*parseInt(Bp)+ 6*parseInt(Bg)+ 5*parseInt(Cp)+ 4*parseInt(Cg)+ 3*parseInt(Dp)+ 2*parseInt(Dg)+ 1*parseInt(Eg) ) ;
 
 finalresult = finalresult.toFixed(2);  
   
+
 if(total==10){
              document.getElementById('result').innerHTML = finalresult+"%";
   
@@ -616,7 +621,8 @@ if(total==10){
                                   jsConfetti.addConfetti() ;
                                    }
                else {document.getElementById("details").innerHTML = "You have to apppear for the SAY exam to be eligible for higher   studies"; }
-}
+               
+              }
   
 else   {document.getElementById('result').innerHTML = "error";
        document.getElementById("details").innerHTML = "Total number of subjects doesn't add upto 10" ;
@@ -624,16 +630,32 @@ else   {document.getElementById('result').innerHTML = "error";
   
   
   
-  
- 
-  
-localStorage.setItem('result', finalresult);
+clicked= true;
 
+ if(clicked==true){console.log("clicked is true")}
+ else{console.log("Clicked is false")}
   
 }
 
 
+function share(){
 
+console.log(finalresult)
+  
+         if(clicked==true){
+               window.open(
+                "https://api.whatsapp.com/send?text="+"I got "+finalresult+"% in SSLC. What about you?   "+"https://abhinavpb-249.github.io/SSLC/"
+                ,'_blank');
+         }
+         
+            
+          else{  window.open(
+                "https://api.whatsapp.com/send?text=https://abhinavpb-249.github.io/SSLC/"
+                ,'_blank');
+           }     
+                
+                
+        }
 
 
 

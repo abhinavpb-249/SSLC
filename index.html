@@ -1,0 +1,667 @@
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<div class="separator" style="clear: both;"><a href="https://i.ytimg.com/vi/I-HtnJl3M9E/maxresdefault.jpg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" data-original-height="450" data-original-width="800" src="https://i.ytimg.com/vi/I-HtnJl3M9E/maxresdefault.jpg"/></a></div>
+
+<meta name="description" content="Just type in your grades and get your SSLC percentage instantaneously">
+  
+<h2>SSLC Percentage Calculator for Kerala State Syllabus students</h2>
+
+
+
+
+
+
+</head> 
+  
+<body>
+
+    <p>
+To find the SSLC percentage, Type the number of A+,A,B+... you got and click "Show result" to get the result.
+</p>
+
+
+
+<div style="background: #032152; color:white; border-radius: 10px; border: 1px solid lightgray; font-size: 15px; margin: 10px; padding: 10px;">
+
+  <form>
+  
+    <label for="Ap">NO of A+ </label>
+    <input id="Ap" type="number" pattern="[0-9]*" inputmode="numeric" size="4">
+    <br /><br />
+    
+<label for="Ag">NO of A &nbsp; </label>
+<input id="Ag" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Bp">NO of B+ </label>
+<input id="Bp" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Bg">NO of B &nbsp;</label>
+<input id="Bg" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Cp">NO of C+ </label>
+<input id="Cp" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Cg">NO of C &nbsp;</label>
+<input id="Cg" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Dp">NO of D+ </label>
+<input id="Dp" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Dg">NO of D &nbsp;</label>
+<input id="Dg" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+<label for="Eg">NO of E &nbsp;</label>
+<input id="Eg" type=”number” pattern="[0-9]*" inputmode="numeric" size="4"/>
+<br /><br />
+
+  </form>
+    
+<div style="font-size: 30px; margin: 10px; padding: 20px; text-align: center;">
+
+ 
+  
+  
+     <button class="button-71" onclick="output()" > Show Result</button>
+  
+
+  </div>  
+ </div>
+
+
+
+
+
+
+<div id="result" > </div>
+  
+  
+  
+
+<div style="text-align:center">
+  <p id="details"></p>  
+  
+    <a href="whatsapp://send?text=https://pbphysics.blogspot.com/2021/08/sslc-percentage-calculator.html"       data-action="share/whatsapp/share"  
+        target="_blank">
+  <div class="button-85">
+           Share
+          </div>
+  </a>
+  
+</div>  
+  
+  
+  
+  
+  
+  
+<!-- How is it calculated part -->
+  
+ <br> 
+<br> 
+<hr> 
+
+<h2>How is it Calculated? </h2>
+
+
+Each subject is assigned a grade point like this:<br>
+
+<table>
+  <tr>
+    <th>Grade</th>
+    <th>Grade point</th>
+    
+  </tr>
+  
+  <tr>
+    <td>A+ </td>
+    <td>9</td>
+  </tr>
+  
+  <tr>
+    <td>A </td>
+    <td>8</td>
+  </tr>
+  
+  <tr>
+    <td>B+ </td>
+    <td>7</td>
+  </tr>
+  
+  <tr>
+    <td>B </td>
+    <td>6</td>
+  </tr>
+  
+  <tr>
+    <td>C+ </td>
+    <td>5</td>
+  </tr>
+  
+  <tr>
+    <td>C </td>
+    <td>4</td>
+  </tr>
+  
+  <tr>
+    <td>D+ </td>
+    <td>3</td>
+  </tr>
+  
+  <tr>
+    <td>D </td>
+    <td>2</td>
+  </tr>
+  
+  <tr>
+    <td>E </td>
+    <td>1</td>
+  </tr>
+  
+  
+</table>
+
+<br><br>
+Then the Total Grade Point (<b>TGP</b>) is calculated by adding the grade point of all 10 subjects.
+<br>For example, if a student got 10 A+, their grade point is $10 \times 9 = 90 $. <br>
+This should be equivalent to 100%.
+<br><br>
+The relation can be expressed as 
+$$  100 = 90 \times \frac{100}{90}  $$
+
+Generally,
+$$  Percentage = TGP \times \frac{100}{90}  $$
+
+This site calculates TGP as:
+
+<p> TGP = (9 x No. of A+) + (8 x No. of A)+... + (1 x No. of E) </p>
+
+<hr>
+<br><br>
+<b>However remember that given result is only an approximation and the value may be different by maximum 10 percentage.</b>
+<br>
+<b>To get accurate result, <a href="http://onlinepbms.kerala.gov.in/eservices/index.php/marklist">apply for marklist</a></b>
+
+<br>
+
+ 
+
+<p> if you have your marks,you can get the accurate percentage as:  
+$$\textnormal{Percentage=}\frac{\textnormal{marks obtained}}{\textnormal{Total marks}} \times 100$$
+<br>
+But your marks are not usually given with your SSLC result.
+So, to get them you have to "Demand Draft" for it from pareekshabhavan
+</p>
+
+
+
+<div style="text-align:center">
+ <a href="whatsapp://send?text=https://pbphysics.blogspot.com/2021/08/sslc-percentage-calculator.html"       data-action="share/whatsapp/share"  
+        target="_blank">
+   
+  <div class="button-71">
+   Share this site
+  </div>
+</a> 
+</div>
+
+
+
+
+
+  
+  
+<br>  
+  
+  
+
+  
+
+
+<!---___Reference expandible_______________________________--->
+
+
+<canvas id="confetti"></canvas>
+
+
+<details>
+  <summary> References </summary>
+  <p id="Ref"> 1. Hsslive <a href=https://www.hsslive.co.in/2020/10/kerala-sslc-grade-to-percentage-calculator.html >Kerala SSLC 10th Percentage Calculation </a> </p>
+</details>
+    
+<hr>    
+    
+
+    <h2> Frequently asked questions</h2>
+<details>
+  <summary>How much is my percentage if I have got full A+?</summary>
+
+ <p> Your percentage is in between 90% and 100%. To get an accurate result, you will have to do as said above.Apply for the mark list and find percentage from that.</p>
+</details>
+  
+
+
+  
+<br><br><br>
+
+  
+
+  <div  style="text-align:right;"> <a href="#top">
+    Back to top</a></div> 
+    
+<p>ഇത് friendsനും Share ചെയ്യൂ...</p>
+<p> അവർക്കും ഉപകാരം ആവട്ടെ.. </p>    
+
+<!---__________________________________________________________________________________________________--->
+<!--- CSS________________________________________ --->
+
+<style>
+  
+  
+  #result{
+  background: white; border-radius: 10px; border: 3px solid lightgray;  margin: auto; 
+    padding-top: 60px; padding-bottom: 60px;
+    text-align:center;
+    font-size:60px; 
+  }
+  
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+  .mybox{ color:white;
+        background-color:#4995BE;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-align:center;
+        font-size:30px;
+  
+ 
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  
+  }
+  
+  
+  
+.collapsible {
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+  .reference-collapsible {
+  background-color: SaddleBrown;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #777;
+}
+.active, .reference-collapsible:hover {
+  background-color:rosyBrown;
+}
+  
+  
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.reference-collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+  
+  
+.active:after {
+  content: "\2212";
+}  
+  
+ div.scroll {
+                margin: 4px, 4px;
+                padding: 4px;
+                background-color: white;
+                width: 100%;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+            }
+
+  .gwhitebox{
+    background: ghostwhite; 
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px; padding: 10px;
+  }
+  
+ .but{
+    color:white;
+    background: blue; 
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px; padding: 10px;
+  } 
+  
+  a {  
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+
+  
+ 
+
+  
+
+ 
+/* CSS */
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+} 
+  
+  
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+  
+  
+  
+</style>
+
+
+
+  
+<!--- Javascript--->
+  
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  
+  
+<script>
+    
+  const canvas = document.querySelector('#confetti');
+
+  const jsConfetti = new JSConfetti();
+
+</script>  
+  
+  
+
+<script charset="utf-8" language="javascript" type="text/javascript">
+
+function output(){
+    var Ap = document.getElementById('Ap').value;
+    var Ag = document.getElementById('Ag').value;
+    var Bp = document.getElementById('Bp').value;
+    var Bg = document.getElementById('Bg').value;
+    var Cp = document.getElementById('Cp').value;
+    var Cg = document.getElementById('Cg').value;
+    var Dp = document.getElementById('Dp').value;
+    var Dg = document.getElementById('Dg').value;
+    var Eg = document.getElementById('Eg').value;
+  
+  
+  if (Ap.length ==0 )
+     {Ap=0}
+  if (Ag.length ==0 )
+     {Ag=0}
+  if (Bp.length ==0 )
+     {Bp=0}
+  if (Bg.length ==0 )
+     {Bg=0}
+  if (Cp.length ==0 )
+     {Cp=0}
+  if (Cg.length ==0 )
+     {Cg=0}
+  if (Dp.length ==0 )
+     {Dp=0}
+  if (Dg.length ==0 )
+     {Dg=0}
+  if (Eg.length ==0 )
+     {Eg=0}
+  
+  
+    Ap = parseFloat(Ap);
+  Ag = parseFloat(Ag);
+  Bp = parseFloat(Bp);
+  Bg = parseFloat(Bg);
+  Cp = parseFloat(Cp);
+  Cg = parseFloat(Cg);
+  Dp = parseFloat(Dp);
+  Dg = parseFloat(Dg);
+  Eg = parseFloat(Eg);
+  
+  
+  
+  var total = Ap+Ag+Bp+Bg+Cp+Cg+Dp+Dg+Eg;
+
+  
+  console.log("total:  "+total);
+  
+  
+  
+let finalresult = 
+      100/90*(9*parseInt(Ap) + 8*parseInt(Ag) + 7*parseInt(Bp)+ 6*parseInt(Bg)+ 5*parseInt(Cp)+ 4*parseInt(Cg)+ 3*parseInt(Dp)+ 2*parseInt(Dg)+ 1*parseInt(Eg) ) ;
+
+finalresult = finalresult.toFixed(2);  
+  
+if(total==10){
+             document.getElementById('result').innerHTML = finalresult+"%";
+  
+             
+              if ( (parseInt(Dg)+ parseInt(Eg))<10  )
+                                  { 
+                                  document.getElementById("details").innerHTML = "You have passed the SSLC examination" ;
+                                    document.getElementById('result').style.color="green"; 
+                                  jsConfetti.addConfetti() ;
+                                   }
+               else {document.getElementById("details").innerHTML = "You have to apppear for the SAY exam to be eligible for higher   studies"; }
+}
+  
+else   {document.getElementById('result').innerHTML = "error";
+       document.getElementById("details").innerHTML = "Total number of subjects doesn't add upto 10" ;
+       } 
+  
+  
+  
+  
+ 
+  
+localStorage.setItem('result', finalresult);
+
+  
+}
+
+
+
+
+
+
+
+  
+</script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$','$'],['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true       
+  },
+  options: {
+   ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+</script>
+    
+</body>    
+  
+  
+</html>
+  
+

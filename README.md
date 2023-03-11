@@ -1,3 +1,6 @@
 # SSLC
 <b>SSLC percentage Calculator</b>
-A website to calculate the percentage from the grades of SSLC exam state syllabus such as of Kerala
+<br>
+A website to calculate the percentage from the grades of SSLC exam.
+<br>
+The SSLC(Secondary School Leaving Certificate) is obtained on passing the grade 10 public examination, which is commonly referred to as 'class 10 board examinations' in India. SSLC is a common eligibility examination popular in many states in India, especially Kerala, Karnataka, and Tamil Nadu.

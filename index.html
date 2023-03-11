@@ -553,7 +553,9 @@ tr:nth-child(even) {
  if(clicked==true){console.log("clicked is true")}
  else{console.log("Clicked is false")}
  
- 
+ if (window.matchMedia("(max-width: 767px)").matches){
+ document.getElementById("result").style.width="100%";
+ }
      
 
 function output(){

@@ -1,3 +1,10 @@
+.myheading {
+       font-size:30;
+       font-weight: bold;
+
+}
+
+
  .input_form{
   width:30%;
   margin:auto;

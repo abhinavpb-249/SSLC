@@ -13,6 +13,10 @@
 };
   
 //confetti    
+
+
+
+
   const canvas = document.querySelector('#confetti');
 
   const jsConfetti = new JSConfetti();

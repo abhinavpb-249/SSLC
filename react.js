@@ -17,3 +17,9 @@ const ViewCounter: FC = () => {
 
   return <span>{pageViews} views</span>
 }
+
+
+ReactDOM.render(
+  <h1>Views will be shown here</h1>,
+  document.getElementById('views')
+);

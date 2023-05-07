@@ -1,25 +1,11 @@
-import PageViews from '@yeger/page-views'
-import type { FC } from 'react'
-import { useEffect, useState } from 'react'
 
-const ViewCounter: FC = () => {
-  PageViews.autoSubmitViews()
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-  const [pageViews, setPageViews] = useState<number>()
-
-  useEffect(() => {
-    PageViews.getViews().then(setPageViews)
-  })
-
-  if (pageViews === undefined) {
-    return <span>Loading...</span>
-  }
-
-  return <span>{pageViews} views</span>
+function Hello(props) {
+  return <h1>Views</h1>;
 }
 
-
-ReactDOM.render(
-  <h1>Views will be shown here</h1>,
-  document.getElementById('views')
-);
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Hello />);

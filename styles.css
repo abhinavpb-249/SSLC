@@ -214,3 +214,7 @@ tr:nth-child(even) {
   border-radius: 10px;
 }
   
+.footer{
+       display:flex;
+       justify-content:space-between;
+}

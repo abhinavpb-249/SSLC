@@ -6,41 +6,69 @@
 
 
  .input_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width:30%;
   margin:auto;
+  border:2px solid black;
+  padding: 15px;
+  }
+
+  .input_form div{
+    margin:10px;
+    width:100%;
+    display: flex;
+    justify-content: center;
   }
   
-  .blue_box{
-  background: #032152; color:white; border-radius: 10px; border: 3px solid blue; font-size: 15px; 
-margin: auto; padding: 10px; width:50%;
-  }
+.input_form input{
+  width: 100%;
+}
+
+.input_form table{
+  width: 50%;
+  margin:auto;
+}
+
+.input_form td{
+    width: 50%;
+}
+
+.input_form  td:last-child {
+  background-color: #5696c7;
   
-  .input{
-  width:50%;
-  }
+}
+
+.input_form button{
+
+}
   
-  #result{
-  background: white; border-radius: 10px; border: 3px solid lightgray; 
-    width:25%;
+.input_form  #result{
+    background: white; 
+    border-radius: 10px; 
+    border: 3px solid lightgray; 
+    width:fit-content;
     margin: auto; 
-    padding-top: 60px; padding-bottom: 60px;
+    padding: 30px 20px;
     text-align:center;
     font-size:60px; 
   }
   
-  table {
+  #describe table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 90%;
 }
 
-td, th {
+#describe td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
+#describe tr:nth-child(even) {
   background-color: #dddddd;
 }
   

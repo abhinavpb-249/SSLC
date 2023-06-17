@@ -14,9 +14,6 @@
   
 //confetti    
 
-
-
-
   const canvas = document.querySelector('#confetti');
 
   const jsConfetti = new JSConfetti();
@@ -39,7 +36,7 @@
 
 function output(){
    
-  Ap = document.getElementById('Ap').value;
+     Ap = document.getElementById('Ap').value;
      Ag = document.getElementById('Ag').value;
      Bp = document.getElementById('Bp').value;
      Bg = document.getElementById('Bg').value;

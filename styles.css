@@ -18,8 +18,7 @@
 
   @media screen and (max-width: 770px ) {
     .input_form{
-      width: 100%;
-      
+      width: 80%;  
     }
   }
 

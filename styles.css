@@ -16,6 +16,14 @@
   padding: 15px;
   }
 
+  @media screen and (max-width: 770px ) {
+    .input_form{
+      width: 100%;
+      
+    }
+  }
+
+
   .input_form div{
     margin:10px;
     width:100%;

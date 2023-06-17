@@ -4,7 +4,7 @@
 }
 
 body{
-  margin: 5px;
+  margin: 10px;
 }
 
 h1{
@@ -15,6 +15,10 @@ hr{
   margin-bottom: 15px;
 }
 
+p{
+  margin:10px 0px;
+  width: 50%;
+}
 
  .input_form{
   display: flex;
@@ -30,6 +34,10 @@ hr{
   @media screen and (max-width: 770px ) {
     .input_form{
       width: 90%;
+    }
+
+    p{
+      width:100%
     }
   }
 
@@ -59,9 +67,7 @@ hr{
   
 }
 
-.input_form button{
 
-}
   
 .input_form  #result{
     background: white; 
@@ -74,6 +80,15 @@ hr{
     font-size:60px; 
   }
   
+.btn-container{
+  text-align:center
+}
+
+.btn-container button{
+  margin:10px;
+}
+
+
   #describe table {
   font-family: arial, sans-serif;
   border-collapse: collapse;

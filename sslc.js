@@ -86,9 +86,9 @@ function output(){
  finalresult = 
       100/90*(9*parseInt(Ap) + 8*parseInt(Ag) + 7*parseInt(Bp)+ 6*parseInt(Bg)+ 5*parseInt(Cp)+ 4*parseInt(Cg)+ 3*parseInt(Dp)+ 2*parseInt(Dg)+ 1*parseInt(Eg) ) ;
 
-finalresult = finalresult.toFixed(2);  
-  
+finalresult = finalresult.toFixed();  
 
+finalresult=(finalresult-10)+"-"+finalresult
 if(total==10){
 
              document.getElementById('result').innerHTML = finalresult+"%";

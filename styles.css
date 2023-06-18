@@ -20,6 +20,11 @@ p{
   width: 50%;
 }
 
+li{
+  margin:5px;
+  margin-left:20px;
+}
+
  .input_form{
   display: flex;
   flex-direction: column;

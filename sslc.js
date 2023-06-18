@@ -88,7 +88,7 @@ function output(){
 
 finalresult = finalresult.toFixed();  
 
-finalresult=(finalresult-10)+"-"+finalresult
+finalresult=(finalresult-10)+"%-"+finalresult
 if(total==10){
 
              document.getElementById('result').innerHTML = finalresult+"%";
@@ -121,7 +121,7 @@ function share(){
   
          if(clicked==true){
                window.open(
-                "https://api.whatsapp.com/send?text="+"I got "+finalresult+"% in SSLC. What about you?   "+"https://abhinavpb-249.github.io/SSLC/"
+                "https://api.whatsapp.com/send?text="+"I got "+finalresult+"% in SSLC. What about you?   "+"https://thesophile.github.io/SSLC/"
                 ,'_blank');
          }
          
@@ -129,7 +129,7 @@ function share(){
           else{ 
           
            window.open(
-                "https://api.whatsapp.com/send?text=https://abhinavpb-249.github.io/SSLC/"
+                "https://api.whatsapp.com/send?text=https://thesophile.github.io/SSLC/"
                 ,'_blank');
            }     
                 

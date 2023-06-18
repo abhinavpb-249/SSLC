@@ -88,7 +88,8 @@ function output(){
 
 finalresult = finalresult.toFixed();  
 
-finalresult=(finalresult-10)+"%-"+finalresult
+finalresult=(finalresult-10)+"%-"+finalresult;
+
 if(total==10){
 
              document.getElementById('result').innerHTML = finalresult+"%";

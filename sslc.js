@@ -35,7 +35,9 @@
      
 
 function output(){
-   
+   document.getElementById('result').style.display="block";
+
+
      Ap = document.getElementById('Ap').value;
      Ag = document.getElementById('Ag').value;
      Bp = document.getElementById('Bp').value;

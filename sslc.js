@@ -38,15 +38,15 @@ function output(){
    document.getElementById('result').style.display="block";
 
 
-     Ap = document.getElementById('Ap').value;
-     Ag = document.getElementById('Ag').value;
-     Bp = document.getElementById('Bp').value;
-     Bg = document.getElementById('Bg').value;
-     Cp = document.getElementById('Cp').value;
-     Cg = document.getElementById('Cg').value;
-     Dp = document.getElementById('Dp').value;
-     Dg = document.getElementById('Dg').value;
-     Eg = document.getElementById('Eg').value;
+     Ap = document.getElementById('A+').value;
+     Ag = document.getElementById('A').value;
+     Bp = document.getElementById('B+').value;
+     Bg = document.getElementById('B').value;
+     Cp = document.getElementById('C+').value;
+     Cg = document.getElementById('C').value;
+     Dp = document.getElementById('D+').value;
+     Dg = document.getElementById('D').value;
+     Eg = document.getElementById('E').value;
   
   
   if (Ap.length ==0 )

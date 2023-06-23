@@ -26,7 +26,12 @@ li{
   margin-left:20px;
 }
 
- .grade_input{
+.input-selector{
+  width: fit-content;
+  margin: auto;
+}
+
+ .input_form{
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -39,7 +44,7 @@ li{
   }
 
   @media screen and (max-width: 770px ) {
-    .grade_input{
+    .input_form{
       width: 90%;
     }
 
@@ -49,23 +54,23 @@ li{
   }
 
 
-  .grade_input div{
+  .input_form div{
     margin:10px;
     width:100%;
     display: flex;
     justify-content: center;
   }
   
-.grade_input input{
+.input_form input{
   width: 100%;
 }
 
-.grade_input table{
-  width: 50%;
+.input_form table{
+  width: 60%;
   margin:auto;
 }
 
-.grade_input td{
+.input_form td{
     width: 50%;
 }
 
@@ -73,8 +78,8 @@ li{
 
 
   
-.grade_input  #result{
-    display:none;
+.input_form  .result{
+    display: none;
     background: white; 
     border-radius: 10px; 
     border: 3px solid lightgray; 

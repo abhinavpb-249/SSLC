@@ -8,9 +8,13 @@
 
 
 
-  <link href="styles.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
+  <!--Main js -->
+  <script src="script.js" defer></script>
 
+  <!--jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
   <!--React for Viewcount-->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -44,8 +48,7 @@
 
 <body>
 
-  <!--Main js -->
-  <script src="sslc.js"></script>
+  
 
 
   <h1>SSLC Percentage Calculator </h1>
@@ -114,8 +117,211 @@
 
   </div>-->
 
+  <div class="input-selector" >
+    <div >Grade input <input id="grade-radio" type="radio" name="select" checked> </div>
+    <div >Classic input <input id="classic-radio" type="radio" name="select"> </div>
+  </div>
 
-  <div class="input_form">
+  <div class="input_form" id="grade-input">
+    <div>
+      <table>
+        <tr>
+          <td style="width:90%;"><label for="Ap">First Language I</label></td>
+          <td style="width:10%;">
+            <select id="S1" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Ag">First Language II </label></td>
+          <td >
+          <select id="S2" name="Aplus"  >
+            <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+          </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Bp">English</label></td>
+          <td >
+            <select id="S3" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Bg">Hindi</label></td>
+          <td >
+            <select id="S4" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Cp">Social Science </label></td>
+          <td >
+            <select id="S5" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="Cg">Physics</label></td>
+          <td >
+            <select id="S6" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="Dp">Chemistry</label></td>
+          <td >
+            <select id="S7" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="Dg">Biology</label></td>
+          <td >
+            <select id="S8" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="Eg">Mathematics</label></td>
+          <td >
+            <select id="S9" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Eg">I.T</label></td>
+          <td >
+            <select id="S10" name="Aplus"  >
+              <option value="none" selected hidden>Select</option>
+              <option value="90">A+</option>
+              <option value="80">A</option>
+              <option value="70">B+</option>
+              <option value="60">B</option>
+              <option value="50">C+</option>
+              <option value="40">C</option>
+              <option value="30">D+</option>
+              <option value="20">D</option>
+              <option value="0">E</option>
+            </select>
+          </td>
+        </tr>
+
+
+      </table>
+    </div>
+
+    <div><button class="button-71" onclick="new_output()"> Show Result </button></div>
+
+    <div id="grade-result" class="result"> </div>
+
+  </div>
+
+
+
+  <div class="input_form" id="classic-input">
     <div>
       <table>
         <tr>
@@ -132,7 +338,7 @@
               <option value="7">7</option>
               <option value="8">8</option>
               <option value="9">9</option>
-              <option value="10">10</option>
+              <option value="10"  selected>10</option>
             </select>
           </td>
         </tr>
@@ -141,7 +347,7 @@
           <td><label for="Ag">NO of A </label></td>
           <td class="inp-row">
           <select id="A" name="Aplus"  >
-            <option value="0">0</option>
+            <option value="0" selected>0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -160,7 +366,7 @@
           <td><label for="Bp">NO of B+ </label></td>
           <td class="inp-row">
             <select id="B+" name="Aplus"  >
-              <option value="0">0</option>
+              <option value="0" selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -179,7 +385,7 @@
           <td><label for="Bg">NO of B </label></td>
           <td class="inp-row">
             <select id="B" name="Aplus"  >
-              <option value="0">0</option>
+              <option value="0" selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -198,7 +404,7 @@
           <td><label for="Cp">NO of C+ </label></td>
           <td class="inp-row">
             <select id="C+" name="Aplus"  >
-              <option value="0">0</option>
+              <option value="0" selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -238,7 +444,7 @@
           <td><label for="Dp">NO of D+ </label></td>
           <td class="inp-row">
             <select id="D+" name="Aplus"  >
-              <option value="0">0</option>
+              <option value="0" selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -258,7 +464,7 @@
           <td><label for="Dg">NO of D </label></td>
           <td class="inp-row">
             <select id="D" name="Aplus"  >
-              <option value="0">0</option>
+              <option value="0" selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -277,8 +483,8 @@
         <tr>
           <td><label for="Eg">NO of E </label></td>
           <td class="inp-row">
-            <select id="E" name="Aplus"  >
-              <option value="0">0</option>
+            <select id="E" >
+              <option value="0" selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -297,13 +503,13 @@
 
     <div><button class="button-71" onclick="output()"> Show Result </button></div>
 
-    <div id="result"> </div>
+    <div id="classic-result" class="result" > </div>
 
   </div>
 
 
 
-  <!-- Result will be shown here -->
+  
 
 
 

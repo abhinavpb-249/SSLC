@@ -86,8 +86,6 @@ function new_output(){
    S9  = document.getElementById('S9').value;
    S10 = document.getElementById('S10').value;
 
-   
-
 
 S1  = parseInt(S1);
 S2  = parseInt(S2);
@@ -111,7 +109,67 @@ finalresult=finalresult+"%-"+(finalresult+10)+"%";
 
 grade_result.innerHTML = finalresult;
 
+//Aplus counter
+
+const subjects = [S1,S2,S3,S4,S5,S6,S7,S8,S9,S10];
+
+var Aplus  = 0;
+var Agrade = 0;
+var Bplus  = 0;
+var Bgrade = 0;
+var Cplus  = 0;
+var Cgrade = 0;
+var Dplus  = 0;
+var Dgrade = 0;
+var Egrade = 0;
+
+
+for (let i=0; i<subjects.length;i++) {
+  if(subjects[i]==90){Aplus+=1}
+  if(subjects[i]==80){Agrade+=1}
+  if(subjects[i]==70){Bplus+=1}
+  if(subjects[i]==60){Bgrade+=1}
+  if(subjects[i]==50){Cplus+=1}
+  if(subjects[i]==40){Cgrade+=1}
+  if(subjects[i]==30){Dplus+=1}
+  if(subjects[i]==20){Dgrade+=1}
+  if(subjects[i]==0){Egrade+=1}
 }
+
+var grade_total = Aplus+Agrade+Bplus+Bgrade+Cplus+Cgrade+Dplus+Dgrade+Egrade;
+
+console.log(grade_total); //This should always be 10
+
+if(grade_total==10){ //if entered value is correct
+
+  grade_result.innerHTML = finalresult;
+
+  
+   if (Dgrade==0 && Egrade==0)
+                       { //If they pass
+                       details.innerHTML = "You have passed the SSLC examination" ;
+                       details.style.color="#003300";
+                       grade_result.style.color="green"; 
+                       jsConfetti.addConfetti() ;
+   }
+   else {   //If they fail
+           details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
+           grade_result.style.color="black";
+           details.style.color="red";
+   }
+    
+    clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
+    
+   }
+
+else  {  //if incorrect
+grade_result.innerHTML = "error";
+grade_result.style.color="red";
+details.innerHTML = "Total number of subjects doesn't add upto 10" ;
+} 
+
+
+} //end of new output
      
 
 

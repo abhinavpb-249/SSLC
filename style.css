@@ -32,7 +32,8 @@ li{
 }
 
  .input_form{
-  background-color: aliceblue;
+  background-color: rgb(224, 224, 224);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;

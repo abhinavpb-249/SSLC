@@ -153,25 +153,32 @@ finalresult = finalresult.toFixed();
 
 finalresult=(finalresult-10)+"%-"+finalresult+"%";
 
-if(total==10){
+if(total==10){ //if entered value is correct
 
              classic_result.innerHTML = finalresult;
   
              
               if (Dg==0 && Eg==0)
-                                  { 
+                                  { //If they pass
                                   details.innerHTML = "You have passed the SSLC examination" ;
+                                  details.style.color="#003300";
                                   classic_result.style.color="green"; 
                                   jsConfetti.addConfetti() ;
-                                   }
-               else {details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies"; }
+              }
+              else {   //If they fail
+                      details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
+                      classic_result.style.color="black";
+                      details.style.color="red";
+              }
                
                clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
                
               }
   
-else  { classic_result.innerHTML = "error";
-         details.innerHTML = "Total number of subjects doesn't add upto 10" ;
+else  {  //if incorrect
+        classic_result.innerHTML = "error";
+        classic_result.style.color="red";
+        details.innerHTML = "Total number of subjects doesn't add upto 10" ;
        } 
   
 

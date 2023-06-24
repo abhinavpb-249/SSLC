@@ -89,8 +89,8 @@ function new_output(){
    
 
 
-S1 = parseInt(S1);
-S2 = parseInt(S2);
+S1  = parseInt(S1);
+S2  = parseInt(S2);
 S3  = parseInt(S3);
 S4  = parseInt(S4);
 S5  = parseInt(S5);
@@ -98,7 +98,7 @@ S6  = parseInt(S6);
 S7  = parseInt(S7);
 S8  = parseInt(S8);
 S9  = parseInt(S9);
-S10  = parseInt(S10);
+S10 = parseInt(S10);
 
 
 finalresult = (S1+S2+S3+S4+S5+S6+S7+S8+S9+S10)/10;
@@ -130,25 +130,24 @@ function output(){
    Eg = document.getElementById('E').value;
     
   
-  Ap = parseFloat(Ap);
-  Ag = parseFloat(Ag);document.getElementById('classic')
-  Bp = parseFloat(Bp);
-  Bg = parseFloat(Bg);
-  Cp = parseFloat(Cp);
-  Cg = parseFloat(Cg);
-  Dp = parseFloat(Dp);
-  Dg = parseFloat(Dg);
-  Eg = parseFloat(Eg);
+  Ap = parseInt(Ap);
+  Ag = parseInt(Ag);
+  Bp = parseInt(Bp);
+  Bg = parseInt(Bg);
+  Cp = parseInt(Cp);
+  Cg = parseInt(Cg);
+  Dp = parseInt(Dp);
+  Dg = parseInt(Dg);
+  Eg = parseInt(Eg);
   
- 
-  
+
    total = Ap+Ag+Bp+Bg+Cp+Cg+Dp+Dg+Eg;
    console.log("total:  "+total);
   
   
   
  finalresult = 
-      100/90*(9*parseInt(Ap) + 8*parseInt(Ag) + 7*parseInt(Bp)+ 6*parseInt(Bg)+ 5*parseInt(Cp)+ 4*parseInt(Cg)+ 3*parseInt(Dp)+ 2*parseInt(Dg)+ 1*parseInt(Eg) ) ;
+      100/90*(9*(Ap) + 8*(Ag) + 7*(Bp)+ 6*(Bg)+ 5*(Cp)+ 4*(Cg)+ 3*(Dp)+ 2*(Dg)+ 1*(Eg) ) ;
 
 finalresult = finalresult.toFixed();  
 
@@ -159,13 +158,13 @@ if(total==10){
              classic_result.innerHTML = finalresult;
   
              
-              if ( (parseInt(Dg)+ parseInt(Eg))<10  )
+              if (Dg==0 && Eg==0)
                                   { 
                                   details.innerHTML = "You have passed the SSLC examination" ;
-                                    classic_result.style.color="green"; 
+                                  classic_result.style.color="green"; 
                                   jsConfetti.addConfetti() ;
                                    }
-               else {details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher   studies"; }
+               else {details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies"; }
                
                clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
                

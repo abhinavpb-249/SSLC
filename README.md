@@ -8,3 +8,12 @@ The SSLC(Secondary School Leaving Certificate) is obtained on passing the grade 
 <br>
 Usually grades aren't given along with the certificate. So students have to calculate it.<br>
 That is the reason this project was initiated.
+
+##features
+<ul>
+    <li>Tells you If you have passed or not</li>
+    <li>Two modes of input, you can either enter you grades or the number of each grade
+    (eg.8A+,2A)</li>
+    <li>Tells you the number of each grade in grade mode.</li>
+    <li>Calculate the accurate range of percentage instead of just giving you an upper limit</li>
+<ul>

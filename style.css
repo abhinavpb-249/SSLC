@@ -32,7 +32,7 @@ li{
 }
 
  .input_form{
-  background-color: rgb(224, 224, 224);
+  background-color: beige;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

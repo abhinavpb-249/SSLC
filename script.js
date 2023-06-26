@@ -44,14 +44,14 @@
 
 
 //show grade-input when window loads and hides classic-input
-  if(grade_radio.checked){
-   grade_input.style.display="block";
-   classic_input.style.display="none";
+//   if(grade_radio.checked){
+//    grade_input.style.display="block";
+//    classic_input.style.display="none";
 
-}else if (classic_radio.checked) {
-classic_input.style.display="block";
-grade_input.style.display="none";
-}
+// }else if (classic_radio.checked) {
+// classic_input.style.display="block";
+// grade_input.style.display="none";
+// }
 
 
 
@@ -60,12 +60,16 @@ radio_division.addEventListener("click",radiochange)
 function radiochange(){
 
    if(grade_radio.checked){
-      grade_input.style.display="block";
-      classic_input.style.display="none";
+    grade_input.style.rotate="y 0deg";
+    classic_input.style.rotate="y 180deg";
+      // grade_input.style.display="block";
+      // classic_input.style.display="none";
 
    }else if (classic_radio.checked) {
-      classic_input.style.display="block";
-      grade_input.style.display="none";
+    classic_input.style.rotate="y 0deg";
+    grade_input.style.rotate="y 180deg";
+      // classic_input.style.display="block";
+      // grade_input.style.display="none";
  }
 
 }

@@ -31,6 +31,13 @@ li{
   margin: auto;
 }
 
+.input_container{
+  position: relative;
+  width: 354px;
+  margin: auto;
+  height: 550px;
+}
+
  .input_form{
   background-color: beige;
   border-radius: 5px;
@@ -38,11 +45,30 @@ li{
   flex-direction: column;
   justify-content: space-around;
   align-items:center;
-  width:318px;
+  width:320px;
   height: 447px;
   margin:20px auto;
   border:2px solid black;
   padding: 15px;
+  }
+
+  #grade-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    backface-visibility: hidden;
+    transition: 1000ms;
+  }
+
+  #classic-input{
+    rotate: y 180deg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backface-visibility: hidden;
+    transition: 1000ms;
   }
   
   .input_form div{
@@ -87,9 +113,7 @@ li{
   
 
   @media screen and (max-width: 500px ) {
-    .input_form{
-      width: 315px;
-    }
+    
     
     .input_form table{
       width: 90%;      

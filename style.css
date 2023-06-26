@@ -39,8 +39,8 @@ li{
 }
 
  .input_form{
-  background-color: beige;
-  border-radius: 5px;
+  background-color:antiquewhite;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -81,10 +81,15 @@ li{
   .input_form table{
     width: 80%;
     margin:auto;
+    border-collapse: collapse;
+  }
+
+  .input_form tr {
+    border-bottom: 1px solid grey;
   }
 
   .input_form td{
-    padding-bottom: 15px;
+    padding: 8px 0px;
   }
 
   .input_form td:nth-child(1){
@@ -167,60 +172,8 @@ li{
   background-color: #dddddd;
 }
   
-  .mybox{ color:white;
-        background-color:#4995BE;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        text-align:center;
-        font-size:30px;
-  
- 
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  
-  }
-  
-  
-  
- 
-  
- div.scroll {
-                margin: 4px, 4px;
-                padding: 4px;
-                background-color: white;
-                width: 100%;
-                overflow-x: auto;
-                overflow-y: hidden;
-                white-space: nowrap;
-            }
 
-  .gwhitebox{
-    background: ghostwhite; 
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 10px; padding: 10px;
-  }
-  
- .but{
-    color:white;
-    background: blue; 
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 10px; padding: 10px;
-  } 
-  
-/* a {  
-  display: inline-block;
-  margin: 20px;
-  position: relative;
-  
-} */
-
-
-  
+  /* Blue button */
 .button-71 {
   background-color: #0078d0;
   border: 0;
@@ -269,7 +222,7 @@ li{
   
   
 
-/*button-85 CSS */
+/*Rainbow button*/
 .button-85 {
   padding: 0.6em 2em;
   border: none;

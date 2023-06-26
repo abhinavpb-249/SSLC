@@ -72,7 +72,7 @@ function radiochange(){
 
 
 function new_output(){
-   grade_result.style.display="block";
+   result.style.display="block";
 
 
    S1  = document.getElementById('S1').value;
@@ -107,7 +107,7 @@ finalresult = parseInt(finalresult);
 
 finalresult=finalresult+"%-"+(finalresult+10)+"%";
 
-grade_result.innerHTML = finalresult;
+result.innerHTML = finalresult;
 
 //Aplus counter
 
@@ -142,19 +142,19 @@ console.log(grade_total); //This should always be 10
 
 if(grade_total==10){ //if entered value is correct
 
-  grade_result.innerHTML = finalresult;
+  result.innerHTML = finalresult;
 
   
    if (Dgrade==0 && Egrade==0)
                        { //If they pass
                        details.innerHTML = "You have passed the SSLC examination" ;
                        details.style.color="#003300";
-                       grade_result.style.color="green"; 
+                       result.style.color="green"; 
                        jsConfetti.addConfetti() ;
    }
    else {   //If they fail
            details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
-           grade_result.style.color="black";
+           result.style.color="black";
            details.style.color="red";
    }
     
@@ -163,8 +163,8 @@ if(grade_total==10){ //if entered value is correct
    }
 
 else  {  //if incorrect
-grade_result.innerHTML = "error";
-grade_result.style.color="red";
+result.innerHTML = "error";
+result.style.color="red";
 details.innerHTML = "Total number of subjects doesn't add upto 10" ;
 } 
 
@@ -174,7 +174,7 @@ details.innerHTML = "Total number of subjects doesn't add upto 10" ;
 
 
 function output(){
-   classic_result.style.display="block";
+   result.style.display="block";
 
 
    Ap = document.getElementById('A+').value;
@@ -213,19 +213,19 @@ finalresult=(finalresult-10)+"%-"+finalresult+"%";
 
 if(total==10){ //if entered value is correct
 
-             classic_result.innerHTML = finalresult;
+             result.innerHTML = finalresult;
   
              
               if (Dg==0 && Eg==0)
                                   { //If they pass
                                   details.innerHTML = "You have passed the SSLC examination" ;
                                   details.style.color="#003300";
-                                  classic_result.style.color="green"; 
+                                  result.style.color="green"; 
                                   jsConfetti.addConfetti() ;
               }
               else {   //If they fail
                       details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
-                      classic_result.style.color="black";
+                      result.style.color="black";
                       details.style.color="red";
               }
                
@@ -234,8 +234,8 @@ if(total==10){ //if entered value is correct
               }
   
 else  {  //if incorrect
-        classic_result.innerHTML = "error";
-        classic_result.style.color="red";
+        result.innerHTML = "error";
+        result.style.color="red";
         details.innerHTML = "Total number of subjects doesn't add upto 10" ;
        } 
   

@@ -36,50 +36,44 @@ li{
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width:30%;
+  justify-content: space-around;
+  align-items:center;
+  width:318px;
+  height: 447px;
   margin:20px auto;
   border:2px solid black;
   padding: 15px;
   }
-
-  @media screen and (max-width: 770px ) {
-    .input_form{
-      width: 90%;
-    }
-
-    p{
-      width:100%
-    }
-  }
-
-
+  
   .input_form div{
-    margin:10px;
+    margin:0px;
     width:100%;
     display: flex;
     justify-content: center;
   }
-  
-.input_form input{
-  width: 100%;
-}
 
-.input_form table{
-  width: 60%;
-  margin:auto;
-}
+  .input_form table{
+    width: 80%;
+    margin:auto;
+  }
 
-.input_form td{
-    width: 50%;
-}
+  .input_form td{
+    padding-bottom: 15px;
+  }
 
+  .input_form td:nth-child(1){
+    width: 80%;
+  }
 
+  .input_form td:nth-child(2){
+    width: 20%;
+  }
 
-
-  
-.input_form  .result{
+  .input_form input{
+    width: 100%;
+  }
+ 
+  .result{
     display: none;
     background: white; 
     border-radius: 10px; 
@@ -89,8 +83,32 @@ li{
     padding: 30px 20px;
     text-align:center;
     font-size:60px; 
-  }
+  } 
   
+
+  @media screen and (max-width: 500px ) {
+    .input_form{
+      width: 315px;
+    }
+    
+    .input_form table{
+      width: 90%;      
+    }
+
+    p{ width:100%
+    }
+  }
+
+
+
+
+
+
+  
+/* Input end ############################### */
+
+
+
 .btn-container{
   text-align:center
 }

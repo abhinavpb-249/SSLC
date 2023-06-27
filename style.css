@@ -166,6 +166,11 @@ li{
   width: fit-content;
 }
 
+.centered{
+  text-align: center;
+}
+
+
 .btn-container{
   text-align:center
 }
@@ -180,7 +185,7 @@ li{
   text-align: center;
   width: fit-content;
   margin: auto;
-  margin-bottom:20px;
+  margin-top:20px;
   padding:10px;
 }
 

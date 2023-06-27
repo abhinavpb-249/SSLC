@@ -28,6 +28,7 @@
   const details = document.getElementById("details");
   const grade_number = document.querySelector('#grade_number'); 
   const grade_output = document.querySelector('#grade_output');
+  const science = document.getElementById("science");
 
 
 
@@ -100,6 +101,14 @@ minimum = parseInt(minimum);
 finalresult=minimum+"%-"+(minimum+10)+"%";
 
 result.innerHTML = finalresult;
+
+//Science stream percentage
+
+var science_min = (S6+S7+S8)*100/150;
+
+science_min = Math.round(science_min);
+
+science.innerHTML = "Science stream Percentage: "+science_min+"% - "+(science_min+10)+"%" ;
 
 //Aplus counter
 

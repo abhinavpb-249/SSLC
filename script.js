@@ -224,9 +224,7 @@ clicked= true; //used to check before sharing. The finalresult is only shared if
 
 
 function output(){
-   result.style.display="block";
-
-
+   
    Ap = document.getElementById('A+').value;
    Ag = document.getElementById('A').value;
    Bp = document.getElementById('B+').value;
@@ -261,38 +259,66 @@ finalresult = finalresult.toFixed();
 
 finalresult=`${finalresult-10}%-${finalresult}%`;
 
-if(total==10){ //if entered value is correct
+// if(total==10){ //if entered value is correct
 
-             result.innerHTML = finalresult;
+//              result.innerHTML = finalresult;
   
              
-              if (Dg==0 && Eg==0)
-                                  { //If they pass
-                                  details.innerHTML = "You have passed the SSLC examination" ;
-                                  details.style.color="#003300";
-                                  result.style.color="green"; 
-                                  jsConfetti.addConfetti() ;
-              }
-              else {   //If they fail
-                      details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
-                      result.style.color="black";
-                      details.style.color="red";
-              }
+//               if (Dg==0 && Eg==0)
+//                                   { //If they pass
+//                                   details.innerHTML = "You have passed the SSLC examination" ;
+//                                   details.style.color="#003300";
+//                                   result.style.color="green"; 
+//                                   jsConfetti.addConfetti() ;
+//               }
+//               else {   //If they fail
+//                       details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
+//                       result.style.color="black";
+//                       details.style.color="red";
+//               }
                
-               clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
+//                clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
                
-              }
+//               }
   
-else  {  //if incorrect
-        result.innerHTML = "error";
-        result.style.color="red";
-        details.innerHTML = "Total number of subjects doesn't add upto 10" ;
-       } 
+// else  {  //if incorrect
+//         result.innerHTML = "error";
+//         result.style.color="red";
+//         details.innerHTML = "Total number of subjects doesn't add upto 10" ;
+//        } 
   
 
-  
-}
+if(total!=10){ //if entered value is incorrect
 
+  
+  alert("Please select all fields");
+  
+     
+  
+  }else  {  //if correct
+  
+    result.innerHTML = finalresult;
+    result.style.display="block";
+  
+    if (Dg==0 && Eg==0)     //If they pass
+    { 
+    details.innerHTML = "You have passed the SSLC examination" ;
+    details.style.color="#003300";
+    result.style.color="green"; 
+    jsConfetti.addConfetti() ;
+    
+    } else {   //If they fail
+    details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
+    result.style.color="black";
+    details.style.color="red";
+    }
+  
+  clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
+  
+  
+  } 
+  
+}//classic output end
 
 function share(){
 

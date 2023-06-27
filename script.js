@@ -12,27 +12,12 @@
   }
 };
   
-//confetti    
+   
+  clicked = false
 
-  const canvas = document.querySelector('#confetti');
-
+  const canvas = document.querySelector('#confetti');     //confetti 
   const jsConfetti = new JSConfetti();
 
-
-
- clicked = false
-
-
- /*
- if (window.matchMedia("(max-width: 767px)").matches){
- document.getElementById("result").style.width="90%";
- document.getElementsByClassName("blue_box")[0].style.width="90%";
- document.getElementsByClassName("input_form")[0].style.width="50%";
- document.getElementsByClassName("input").style.width="20%";
- document.getElementById("table").style.width="90%";
- 
- }
- */
   const grade_input = document.getElementById("grade-input"); 
   const classic_input = document.getElementById("classic-input"); 
   const grade_result = document.getElementById("grade-result"); 
@@ -41,17 +26,9 @@
   const classic_radio = document.getElementById("classic-radio");
   const grade_radio = document.getElementById("grade-radio");
   const details = document.getElementById("details");
+  const grade_number = document.querySelector('#grade_number'); 
+  const grade_output = document.querySelector('#grade_output');
 
-
-//show grade-input when window loads and hides classic-input
-//   if(grade_radio.checked){
-//    grade_input.style.display="block";
-//    classic_input.style.display="none";
-
-// }else if (classic_radio.checked) {
-// classic_input.style.display="block";
-// grade_input.style.display="none";
-// }
 
 
 
@@ -171,6 +148,25 @@ result.innerHTML = "error";
 result.style.color="red";
 details.innerHTML = "Total number of subjects doesn't add upto 10" ;
 } 
+
+//Display number of grades
+
+grade_number.innerHTML=""; //clears all the previous text, if any
+
+const grades = [Aplus,Agrade,Bplus,Bgrade,Cplus,Cgrade,Dplus,Dgrade,Egrade]
+const grades_text = [" A+"," A"," B+"," B"," C+"," C"," D+"," D"," E"]
+
+for(i=0;i<grades.length;i++){
+    if (grades[i]!=0){
+    const para = document.createElement("div");
+    const node = document.createTextNode(grades[i]+grades_text[i]);
+    para.appendChild(node);
+    grade_number.appendChild(para);
+    }
+}
+
+grade_output.style.display="block";
+
 
 
 } //end of new output

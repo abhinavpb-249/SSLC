@@ -104,17 +104,7 @@ li{
     width: 100%;
   }
  
-  .result{
-    display: none;
-    background: white; 
-    border-radius: 10px; 
-    border: 3px solid lightgray; 
-    width:fit-content;
-    margin: auto; 
-    padding: 30px 20px;
-    text-align:center;
-    font-size:60px; 
-  } 
+  
   
 
   @media screen and (max-width: 500px ) {
@@ -131,12 +121,34 @@ li{
 
 
 
+                                                                        /* result */
+.result{                                                      
+  display: none;
+  background: white; 
+  border-radius: 10px; 
+  border: 3px solid lightgray; 
+  width:fit-content;
+  margin: auto; 
+  padding: 30px 20px;
+  text-align:center;
+  font-size:60px; 
+} 
 
+#grade_output{
+  display: none;
+  text-align: center;
+}
 
-  
-/* Input end ############################### */
+#grade_number{
+  width: fit-content;
+  margin: 20px auto;
+  padding: 15px 50px;
+  border: 2px solid grey;
+}
 
-
+#grade_number div{
+  width: fit-content;
+}
 
 .btn-container{
   text-align:center
@@ -146,7 +158,7 @@ li{
   margin:10px;
 }
 
-.box{
+.opensource-box{
   border: 2px solid black;
   background-color: antiquewhite;
   text-align: center;

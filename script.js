@@ -291,7 +291,7 @@ finalresult=`${finalresult-10}%-${finalresult}%`;
 if(total!=10){ //if entered value is incorrect
 
   
-  alert("Please select all fields");
+  alert("Total number of subjects not equal to 10. Please check your values and try again.");
   
      
   

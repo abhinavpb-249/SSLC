@@ -98,7 +98,7 @@ minimum = minimum.toFixed();
 
 minimum = parseInt(minimum);
 
-finalresult=minimum+"%-"+(minimum+10)+"%";
+finalresult=`${minimum}%-${minimum+10}%`;
 
 result.innerHTML = finalresult;
 
@@ -108,7 +108,7 @@ var science_min = (S6+S7+S8)*100/150;
 
 science_min = Math.round(science_min);
 
-science.innerHTML = "Science stream Percentage: "+science_min+"% - "+(science_min+10)+"%" ;
+science.innerHTML = `Science stream Percentage: ${science_min}% - ${science_min+10}%` ;
 
 //Aplus counter
 
@@ -245,7 +245,7 @@ function output(){
 
 finalresult = finalresult.toFixed();  
 
-finalresult=(finalresult-10)+"%-"+finalresult+"%";
+finalresult=`${finalresult-10}%-${finalresult}%`;
 
 if(total==10){ //if entered value is correct
 

@@ -55,17 +55,28 @@ function radiochange(){
 function new_output(){
    result.style.display="block";
 
+   sub1  = document.getElementById("S1");
+   sub2  = document.getElementById("S2");
+   sub3  = document.getElementById("S3");
+   sub4  = document.getElementById("S4");
+   sub5  = document.getElementById("S5");
+   sub6  = document.getElementById("S6");
+   sub7  = document.getElementById("S7");
+   sub8  = document.getElementById("S8");
+   sub9  = document.getElementById("S9");
+   sub10 = document.getElementById("S10");
 
-   S1  = document.getElementById('S1').value;
-   S2  = document.getElementById('S2').value;
-   S3  = document.getElementById('S3').value;
-   S4  = document.getElementById('S4').value;
-   S5  = document.getElementById('S5').value;
-   S6  = document.getElementById('S6').value;
-   S7  = document.getElementById('S7').value;
-   S8  = document.getElementById('S8').value;
-   S9  = document.getElementById('S9').value;
-   S10 = document.getElementById('S10').value;
+
+   S1  = sub1.value;
+   S2  = sub2.value;
+   S3  = sub3.value;
+   S4  = sub4.value;
+   S5  = sub5.value;
+   S6  = sub6.value;
+   S7  = sub7.value;
+   S8  = sub8.value;
+   S9  = sub9.value;
+   S10 = sub10.value;
 
 
 S1  = parseInt(S1);
@@ -80,19 +91,19 @@ S9  = parseInt(S9);
 S10 = parseInt(S10);
 
 
-finalresult = (S1+S2+S3+S4+S5+S6+S7+S8+S9+S10)/10;
+var minimum = (S1+S2+S3+S4+S5+S6+S7+S8+S9+S10)*100/740;
  
-finalresult = finalresult.toFixed();  
+minimum = minimum.toFixed();  
 
-finalresult = parseInt(finalresult);
+minimum = parseInt(minimum);
 
-finalresult=finalresult+"%-"+(finalresult+10)+"%";
+finalresult=minimum+"%-"+(minimum+10)+"%";
 
 result.innerHTML = finalresult;
 
 //Aplus counter
 
-const subjects = [S1,S2,S3,S4,S5,S6,S7,S8,S9,S10];
+// const subjects = [S1,S2,S3,S4,S5,S6,S7,S8,S9,S10];
 
 var Aplus  = 0;
 var Agrade = 0;
@@ -105,16 +116,32 @@ var Dgrade = 0;
 var Egrade = 0;
 
 
-for (let i=0; i<subjects.length;i++) {
-  if(subjects[i]==90){Aplus+=1}
-  if(subjects[i]==80){Agrade+=1}
-  if(subjects[i]==70){Bplus+=1}
-  if(subjects[i]==60){Bgrade+=1}
-  if(subjects[i]==50){Cplus+=1}
-  if(subjects[i]==40){Cgrade+=1}
-  if(subjects[i]==30){Dplus+=1}
-  if(subjects[i]==20){Dgrade+=1}
-  if(subjects[i]==0){Egrade+=1}
+var s1text  = sub1.options[sub1.selectedIndex].text;
+var s2text  = sub2.options[sub2.selectedIndex].text;
+var s3text  = sub3.options[sub3.selectedIndex].text;
+var s4text  = sub4.options[sub4.selectedIndex].text;
+var s5text  = sub5.options[sub5.selectedIndex].text;
+var s6text  = sub6.options[sub6.selectedIndex].text;
+var s7text  = sub7.options[sub7.selectedIndex].text;
+var s8text  = sub8.options[sub8.selectedIndex].text;
+var s9text  = sub9.options[sub9.selectedIndex].text;
+var s10text = sub10.options[sub10.selectedIndex].text;
+
+// console.log(s1text,s2text,s3text,s4text,s5text,s6text,s7text,s8text,s9text,s10text);
+
+const selected_grade = [s1text,s2text,s3text,s4text,s5text,s6text,s7text,s8text,s9text,s10text];
+
+
+for (let i=0; i<selected_grade.length;i++) {
+  if(selected_grade[i]=="A+" ){Aplus+=1}
+  if(selected_grade[i]=="A"){Agrade+=1}
+  if(selected_grade[i]=="B+"){Bplus+=1}
+  if(selected_grade[i]=="B"){Bgrade+=1}
+  if(selected_grade[i]=="C+"){Cplus+=1}
+  if(selected_grade[i]=="C"){Cgrade+=1}
+  if(selected_grade[i]=="D+"){Dplus+=1}
+  if(selected_grade[i]=="D"){Dgrade+=1}
+  if(selected_grade[i]=="E"){Egrade+=1}
 }
 
 var grade_total = Aplus+Agrade+Bplus+Bgrade+Cplus+Cgrade+Dplus+Dgrade+Egrade;

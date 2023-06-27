@@ -52,9 +52,9 @@ function radiochange(){
 
 }
 
-
+//grade output 
 function new_output(){
-   result.style.display="block";
+   
 
    sub1  = document.getElementById("S1");
    sub2  = document.getElementById("S2");
@@ -100,7 +100,6 @@ minimum = parseInt(minimum);
 
 finalresult=`${minimum}%-${minimum+10}%`;
 
-result.innerHTML = finalresult;
 
 //Science stream percentage
 
@@ -108,7 +107,9 @@ var science_min = (S6+S7+S8)*100/150;
 
 science_min = Math.round(science_min);
 
-science.innerHTML = `Science stream Percentage: ${science_min}% - ${science_min+10}%` ;
+var science_percent = `Science stream Percentage: ${science_min}% - ${science_min+10}%` ;
+
+// science.innerHTML = science_percent ;
 
 //Aplus counter
 
@@ -157,34 +158,6 @@ var grade_total = Aplus+Agrade+Bplus+Bgrade+Cplus+Cgrade+Dplus+Dgrade+Egrade;
 
 console.log(grade_total); //This should always be 10
 
-if(grade_total==10){ //if entered value is correct
-
-  result.innerHTML = finalresult;
-
-  
-   if (Dgrade==0 && Egrade==0)
-                       { //If they pass
-                       details.innerHTML = "You have passed the SSLC examination" ;
-                       details.style.color="#003300";
-                       result.style.color="green"; 
-                       jsConfetti.addConfetti() ;
-   }
-   else {   //If they fail
-           details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
-           result.style.color="black";
-           details.style.color="red";
-   }
-    
-    clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
-    
-   }
-
-else  {  //if incorrect
-result.innerHTML = "error";
-result.style.color="red";
-details.innerHTML = "Total number of subjects doesn't add upto 10" ;
-} 
-
 //Display number of grades
 
 grade_number.innerHTML=""; //clears all the previous text, if any
@@ -201,7 +174,48 @@ for(i=0;i<grades.length;i++){
     }
 }
 
-grade_output.style.display="block";
+
+
+
+if(grade_total!=10){ //if entered value is incorrect
+
+// result.innerHTML = finalresult;
+//   result.innerHTML = "error";
+// result.style.color="red";
+// details.innerHTML = "Please select all fields" ;
+
+alert("Please select all fields");
+
+   
+
+}else  {  //if correct
+
+  result.innerHTML = finalresult;
+  science.innerHTML = science_percent ;
+  grade_output.style.display="block";
+  result.style.display="block";
+
+  if (Dgrade==0 && Egrade==0)     //If they pass
+  { 
+  details.innerHTML = "You have passed the SSLC examination" ;
+  details.style.color="#003300";
+  result.style.color="green"; 
+  jsConfetti.addConfetti() ;
+  
+  } else {   //If they fail
+  details.innerHTML = "You have to apppear for the SAY exam to be eligible for higher studies";
+  result.style.color="black";
+  details.style.color="red";
+  }
+
+clicked= true; //used to check before sharing. The finalresult is only shared if this condition is satisfied
+
+
+} 
+
+
+
+
 
 
 
